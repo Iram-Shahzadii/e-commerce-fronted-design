@@ -1,0 +1,409 @@
+/* General Reset & Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* HEADER STYLING */
+
+header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo & Brand */
+.logo-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3px;
+  /* justify-content: flex-end; */
+  padding-right: 55px;
+
+ 
+}
+
+.logo-brand img {
+  height: 28px;
+
+  /* margin-right: 6px; */
+}
+
+.logo-brand span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1677ff;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   border: 1px solid #0D6EFD;
+ 
+}
+
+.search-box input {
+  padding: 7px 10px;
+  border: 1px solid #0D6EFD;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  width: 600px;
+}
+
+.search-box select {
+  padding: 7px 10px;
+  border: 1px none;
+  /* border: 1px solid #0D6EFD; */
+  border-left: none;
+  font-size: 14px;
+  
+}
+
+.search-box button {
+  padding: 7px 15px;
+  background-color: #1677ff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px; /* Increased gap for better spacing */
+  padding-left: 15px;
+}
+
+.language-currency,
+.ship-to {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.header-icon {
+  height: 14px; /* Adjust icon size as needed */
+  width: auto;
+  vertical-align: middle;
+}
+
+.header-arrow {
+  margin-left: 3px;
+}
+
+.ship-to-icon {
+  height: 14px; /* Adjust size as needed */
+  width: auto;
+  vertical-align: middle;
+  margin-right: 3px; /* Add some space after the flag icon */
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #333;
+}
+
+.icon img {
+  height: 20px;
+  margin-bottom: 2px;
+}
+.main-navbar {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px 30px;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Make them start from same height */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin-left: 190px;
+  gap: 20px;
+}
+
+.menu-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #1c1c1c;
+}
+
+
+.menu-icon-text img {
+  width: 16px;
+  height: 16px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px; /* adjust this so it aligns under icons */
+  margin-right: 150px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.arrow {
+  font-size: 10px;
+  color: #888;
+}
+
+.flag {
+  width: 16px;
+  height: auto;
+}
+/* Navbar Links Hover (Hot offers, Gift boxes, etc.) */
+.nav-links li:hover {
+  color: #1677ff;
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+}
+
+/* All Category Hover */
+.menu-icon-text:hover {
+  color: #1677ff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+/* Dropdown Hover (English/USD, Ship To, Help) */
+.dropdown:hover {
+  color: #1677ff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+/* Arrow and Flag Hover */
+.arrow:hover,
+.flag:hover {
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+
+/* Header Icons (Profile, Message, Orders, Cart) */
+.icon:hover {
+  color: #1677ff;
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+
+.icon:hover img {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(99%) saturate(748%) hue-rotate(189deg) brightness(94%) contrast(90%);
+}
+
+/* SPACE BETWEEN NAVBAR AND FOOTER */
+.main-spacing {
+  height: 50px; /* Adjust this value as needed */
+}
+
+
+/* FOOTER STYLING */
+.footer {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Footer Brand Section */
+.footer-brand {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.brand-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 35px;
+  height: auto;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1677ff;
+}
+
+.brand-description p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Footer Links */
+.footer-links {
+  flex: 3 1 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  cursor: pointer;
+  display: flex; /* To align text and icon */
+  align-items: center; /* Vertically align text and icon */
+  justify-content: space-between; /* To push icon to the right */
+}
+
+.footer-link-icon {
+  height: 10px; /* Adjust size as needed */
+  width: auto;
+  margin-left: 5px; /* Add some space before the icon */
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .header-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .logo-brand,
+  .header-actions,
+  .search-box {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input,
+  .search-box select,
+  .search-box button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language-currency,
+  .ship-to,
+  .icon {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+    margin-left: 0 !important; /* Reset left margin for mobile */
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-links div {
+    width: 100%;
+  }
+}
